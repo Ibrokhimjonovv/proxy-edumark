@@ -9,7 +9,7 @@ app.use(cors());
 app.use(
   '/api',
   createProxyMiddleware({
-    target: 'https://api.edumark.uz',
+    target: 'https://api.edumark.uz/api',
     changeOrigin: true,
     pathRewrite: { '^/api': '/api' },
   })
